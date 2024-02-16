@@ -45,10 +45,10 @@ let addToCard = document.querySelector('.wrapper2__content4--addCart')
 let imagesSection1 =
 
     [
-        "./images/image-product-1.jpg",
-        "./images/image-product-2.jpg",
-        "./images/image-product-3.jpg",
-        "./images/image-product-4.jpg"
+        "/images/image-product-1.jpg",
+        "/images/image-product-2.jpg",
+        "/images/image-product-3.jpg",
+        "/images/image-product-4.jpg"
     ]
 
 function changeImagehover(event, id_string, img_principal, position_img) {
