@@ -1,0 +1,23 @@
+@mixin styles-button {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@mixin styles-components-button {
+    border: none;
+    align-items: center;
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}

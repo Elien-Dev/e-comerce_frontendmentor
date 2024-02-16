@@ -1,0 +1,199 @@
+@use 'variables';
+@use 'mixins';
+
+.wrapper2 {
+    margin-top: 26px;
+    padding: 0 25px;
+
+    &__content1 {
+        &--tittle {
+            color: variables.$Orange;
+            font-size: 10px;
+        }
+
+        &--lastTittle {
+            margin-top: 22px;
+        }
+
+        &--p {
+            margin-top: 30px;
+            color: variables.$Dark-grayish-blue;
+        }
+    }
+
+    &__content2 {
+        display: flex;
+        margin-top: 35px;
+        margin-left: 0;
+
+        & p:first-child {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        & p:nth-child(2) {
+            align-items: center;
+            background-color: variables.$Pale-orange;
+            border-radius: 5px;
+            color: variables.$Orange;
+            display: flex;
+            font-weight: 600;
+            justify-content: center;
+            margin-left: 30px;
+            width: 50px;
+            padding: 5px 10px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+
+        & p:last-child {
+            align-items: center;
+            color: variables.$Dark-grayish-blue;
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            text-decoration: line-through;
+        }
+    }
+
+    &__content3,
+    &__content4 {
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        transition: .4s;
+        width: 100%;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+
+        &--amount {
+            @include mixins.styles-button;
+            background-color: variables.$Light-grayish-blue;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+            & button {
+                @include mixins.styles-components-button;
+            }
+
+            & input {
+                background-color: #fff0;
+                border: none;
+                text-align: center;
+                text-decoration: none;
+                width: 25px;
+                max-width: 100px
+            }
+
+            &-minus,
+            &-plus {
+                transition: .4s;
+                -webkit-transition: .4s;
+                -moz-transition: .4s;
+                -ms-transition: .4s;
+                -o-transition: .4s;
+            }
+
+            &-minus:hover,
+            &-plus:hover {
+                cursor: pointer;
+                opacity: .65;
+            }
+        }
+    }
+
+    &__content4 {
+        @include mixins.styles-button;
+        justify-content: center;
+        background-color: variables.$Orange;
+
+        &--addCart {
+            align-items: center;
+            background-color: #ffffff00;
+            border: none;
+            color: variables.$White;
+            display: flex;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: space-evenly;
+            width: 150px;
+        }
+    }
+
+    &__content4:hover {
+        cursor: pointer;
+        opacity: .75;
+    }
+}
+
+@media screen and (min-width : 760px) {
+
+    .wrapper2 {
+        width: 450px;
+
+        &__content1 {
+            &--tittle {
+                letter-spacing: 2px;
+            }
+
+            &--lastTittle {
+                font-size: 33px;
+            }
+
+            &--p {
+                margin-top: 30px;
+                width: 426px;
+            }
+        }
+
+        &__content2 {
+            flex-wrap: wrap;
+            width: 172px;
+
+            & p:last-child {
+                height: 58px;
+                margin-left: 0;
+                text-decoration: line-through;
+            }
+        }
+
+        &__content3 {
+            display: flex;
+            justify-content: space-between;
+            width: 110%;
+
+            &--amount {
+                width: 150px;
+
+            }
+        }
+
+        &__content4 {
+            margin: 0;
+            width: 230px;
+
+            &--addCart {
+                align-items: center;
+                background-color: #ffffff00;
+                border: none;
+                color: variables.$White;
+                display: flex;
+                font-size: 16px;
+                font-weight: 600;
+                justify-content: space-evenly;
+                width: 150px;
+            }
+        }
+    }
+
+}

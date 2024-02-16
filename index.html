@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+
+
+  <header class="header">
+
+    <button class="header__btn"><img id="btn__main" src="images/icon-menu.svg" alt="button-main" loading="lazy"></button>
+    <div class="header__logo"><img src="images/logo.svg" alt="logo" loading="lazy"></div>
+
+    <nav class="header__nav">
+      <ul class="list">
+        <li class="list__li"><a href="#" class="list__li--a">Collections</a></li>
+        <li class="list__li"><a href="#" class="list__li--a">Men</a></li>
+        <li class="list__li"><a href="#" class="list__li--a">Women</a></li>
+        <li class="list__li"><a href="#" class="list__li--a">About</a></li>
+        <li class="list__li"><a href="#" class="list__li--a">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__cart">
+      <div  class="header__cart--notification">3</div><img  id="cart" src="images/icon-cart.svg" alt="cart-shopping" loading="lazy">
+    </div>
+
+    <div class="header__user"><img src="images/image-avatar.png" alt="avatar-user"></div>
+
+  </header>
+
+
+  <div class="modal">
+    <nav class="header__nav--mobile">
+      <div class="header__nav--mobile-img"><img id="close_modal-mobile" src="images/icon-close-black.svg" alt=""></div>
+      <ul class="list__mobile">
+        <li class="list__mobile--li"><a href="#" class="list__mobile--a">Collections</a></li>
+        <li class="list__mobile--li"><a href="#" class="list__mobile--a">Men</a></li>
+        <li class="list__mobile--li"><a href="#" class="list__mobile--a">Women</a></li>
+        <li class="list__mobile--li"><a href="#" class="list__mobile--a">About</a></li>
+        <li class="list__mobile--li"><a href="#" class="list__mobile--a">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="div__wrapper">
+      <section class="items">
+        <div class="items__imgClose">
+          <img class="items__imgClose--1" src="images/icon-close-modal.svg" alt="buttonclose">
+          <img class="items__imgClose--2" src="images/icon-close.svg" alt="buttonclose">
+        </div>
+        <div class="items__contentImg">
+          <img src="images/image-product-1.jpg" alt="image products">
+        </div>
+        <div class="items__arrows">
+          <button>
+            <img class="items__arrows--left--modal" src="images/icon-previous-modal.svg" alt="">
+            <img class="items__arrows--left" src="images/icon-previous.svg" alt="arrow left">
+            <button>
+              <button>
+                <img class="items__arrows--right--modal" src="images/icon-next-modal.svg" alt="">
+                <img class="items__arrows--right" src="images/icon-next.svg" alt="arrow right">
+              </button>
+        </div>
+
+        <ul class="items__list">
+          <li><img src="images/image-product-1-thumbnail.jpg" alt=""></li>
+          <li><img src="images/image-product-2-thumbnail.jpg" alt=""></li>
+          <li><img src="images/image-product-3-thumbnail.jpg" alt=""></li>
+          <li><img src="images/image-product-4-thumbnail.jpg" alt=""></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+
+  <div id="modalCart" class="modalCart">
+
+    <h2 class="modalCart__tittle">Cart</h2>
+
+    <div class="modalInf">
+      <p class="modalInf__empty">Your cart is emppty.</p>
+      <div class="modalInf__content1">
+        <div class="modalInf__content1--img"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+        <div class="modalInf__contentCard"><p class="modalInf__contentCard--details">Fall Limited Edition Sneakers</p>
+          <span class="modalInf__contentCard--value">$125.00</span><span class="modalInf__contentCard--operator">x</span><span class="modalInf__contentCard--amount">0</span><span class="modalInf__contentCard--totalPrice">$375.00</span></div>
+
+        <div class="modalInf__contentCard--delete"><img class="img_delete" src="images/icon-delete.svg" alt=""></div>
+
+        <input class="modalInf__content2" type="submit" value="Checkout">
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <section class="wrapper1">
+      <div class="wrapper1__content">
+        <img id="image-primary" src="images/image-product-1.jpg" alt="image products">
+      </div>
+      <div class="wrapper1__arrow">
+        <button id="btn-previous"><img class="wrapper1__arrow--left" src="images/icon-previous.svg" alt="arrow left"></button>
+        <button id="btn-next"><img class="wrapper1__arrow--right" src="images/icon-next.svg" alt="arrow right">
+        </button>
+      </div>
+
+
+      <ul class="wrapper1__list">
+        <li><img id="list-img-1" src="images/image-product-1-thumbnail.jpg" alt="img product"></li>
+        <li><img id="list-img-2" src="images/image-product-2-thumbnail.jpg" alt="img product"></li>
+        <li><img id="list-img-3" src="images/image-product-3-thumbnail.jpg" alt="img product"></li>
+        <li><img id="list-img-4" src="images/image-product-4-thumbnail.jpg" alt="img product"></li>
+      </ul>
+
+    </section>
+
+    <section class="wrapper2">
+      <div class="wrapper2__content1">
+        <h1 class="wrapper2__content1--tittle">SNEAKER COMPANY</h1>
+        <h2 class="wrapper2__content1--lastTittle">Fall Limited Edition Sneakers</h2>
+        <p class="wrapper2__content1--p">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everytzhing the weather can offer.</p>
+      </div>
+
+      <div class="wrapper2__content2">
+        <p>$125.00</p>
+        <p> 50 <span>%</span></p>
+        <p>$250.00</p>
+      </div>
+
+      <div class="wrapper2__content3">
+
+        <div class="wrapper2__content3--amount">
+
+          <button class="wrapper2__content3--amount-minus"><img class="minus" src="images/icon-minus.svg" alt="button minus"></button>
+
+          <input type="text" name="" id="numberProducts" value="0">
+
+          <button class="wrapper2__content3--amount-plus"><img class="plus" src="images/icon-plus.svg" alt="button plus"></button>
+        </div>
+
+        <div class="wrapper2__content4">
+          <button class="wrapper2__content4--addCart"><img src="images/icon-cart-btn.svg" alt="">Add to cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by <a href="Elien.dev07@gmail.com" target="_blank"> Elien.dev07@gmail.com </a>.
+      Coded by <a href="#"> Elien Teran </a>.
+    </div>
+  </div>
+
+  <script src="javaScript/main.js"></script>
+</body>
+
+</html>
