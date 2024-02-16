@@ -19,7 +19,6 @@ let quantityToBuy = document.querySelector('.modalInf__contentCard--amount')
 
 // total rpice
 let totalPrice = document.querySelector('.modalInf__contentCard--totalPrice')
-console.log(totalPrice)
 
 // modal main mobile
 let modal_mobile = document.querySelector('.modal')
@@ -98,7 +97,6 @@ function decreaseProducts () {
 //  evnts handlers
 
 document.addEventListener('click', evt => {
-console.log(evt.target)
 
 // on/off modal mobile
 
